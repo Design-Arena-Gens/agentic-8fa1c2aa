@@ -1,0 +1,27 @@
+:root{--bg:#0b0d10;--panel:#12161b;--muted:#8b98a5;--text:#e6edf3;--accent:#10b981;--danger:#ef4444;--warn:#f59e0b}
+*{box-sizing:border-box}
+html,body,#__next{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.brand{font-weight:800;letter-spacing:.3px}
+.panel{background:var(--panel);border:1px solid #1f2937;border-radius:12px;padding:16px}
+.grid{display:grid;gap:16px}
+@media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+.label{font-size:.85rem;color:var(--muted);margin-bottom:6px}
+.textarea{width:100%;min-height:180px;background:#0e1318;color:var(--text);border:1px solid #1f2937;border-radius:10px;padding:12px;resize:vertical}
+.controls{display:flex;gap:8px;flex-wrap:wrap}
+.input,select{background:#0e1318;color:var(--text);border:1px solid #1f2937;border-radius:10px;padding:10px}
+.button{background:#1f2937;color:var(--text);border:1px solid #2b3645;border-radius:10px;padding:10px 14px;cursor:pointer}
+.button.primary{background:linear-gradient(180deg,#16a34a,#10b981);border-color:#128a5a;color:#06140f}
+.button.warn{background:linear-gradient(180deg,#f59e0b,#fbbf24);border-color:#b45309;color:#2b1703}
+.button.danger{background:linear-gradient(180deg,#ef4444,#f87171);border-color:#991b1b;color:#2c0b0b}
+.button.flat{background:transparent;border:1px dashed #2b3645}
+.button:disabled{opacity:.5;cursor:not-allowed}
+.sectionTitle{font-weight:700;margin:6px 0 10px 0}
+.wave{height:120px;background:#0e1318;border:1px solid #1f2937;border-radius:10px}
+.row{display:flex;gap:8px;align-items:center}
+.badge{font-size:.8rem;color:var(--muted);padding:2px 8px;border:1px solid #2b3645;border-radius:999px}
+.footer{margin-top:18px;color:var(--muted);font-size:.9rem}
+.link{color:var(--accent);text-decoration:none}
+.small{font-size:.85rem;color:var(--muted)}
